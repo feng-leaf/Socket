@@ -66,6 +66,7 @@ int main(int argc , char **argv)
 			while((n = read(connfd , buff , MAX_LINE)) > 0)
 			{
 				write(connfd , buff , n);
+				printf("write message:%s \n",buff);
 			}
 			exit(0);
 		}//if
